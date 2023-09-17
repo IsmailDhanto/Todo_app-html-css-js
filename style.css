@@ -1,0 +1,124 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Main container */
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+  }
+  
+  /* Todo app container */
+  .todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+  }
+  
+  /* Heading for the Todo List */
+  .todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Icon within the Todo List heading */
+  .todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+  }
+  
+  /* Row containing the input field and add button */
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
+  
+  /* Input field */
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+  }
+  
+  /* Add button */
+  button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  /* Styling for each list item in the task list */
+  ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Custom bullet icon before each list item */
+  ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+  
+  /* Styling for checked tasks */
+  ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+  }
+  
+  /* Custom bullet icon for checked tasks */
+  ul li.checked::before {
+    background-image: url(/images/checked.png);
+  }
+  
+  /* Delete button in each list item */
+  ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  /* Hover effect for the delete button */
+  ul li span:hover {
+    background: #edeef0;
+  }
