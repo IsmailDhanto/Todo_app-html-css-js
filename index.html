@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <!-- Todo List Heading with Image -->
+            <h2>Todo List <img src="/images/icon.png" alt=""></h2>
+
+            <!-- Input and Button for Adding Tasks -->
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="AddTask()">Add</button>
+            </div>
+
+            <!-- Task List Container -->
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+
+    <!-- Include SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <!-- Include Custom JavaScript -->
+    <script src="/index.js"></script>
+</body>
+</html>
